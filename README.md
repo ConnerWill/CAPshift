@@ -1,4 +1,4 @@
-![AHK Icon](Icons\H.png)
+![AHK Icon](Icons/H.png)
 
 # CAPshift
 **CAPshift.ahk** extends the functionality of the the **CapsLock** key.
