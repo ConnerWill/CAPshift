@@ -5,7 +5,7 @@
 It allows you to disable unused/annoying keys along with providing formatting of  selected text and text replacement.
 
 ---
-Credit to [Origional script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)
+Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)
 ---
 ## Hotkeys
 
