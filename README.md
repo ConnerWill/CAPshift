@@ -4,7 +4,7 @@
 [**CAPshift.ahk**](https://github.com/ConnerWill/CAPshift) extends the functionality of the the **CapsLock** key.
 It allows you to disable unused/annoying keys along with providing formatting of  selected text and text replacement.
 
-*`Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)`*
+*Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)*
 
 # Hotkeys
 
@@ -144,12 +144,12 @@ Character Replacement
 
 You can make the script run on every boot with either of these methods.
 
-## Standard - *`(Small-Brain method)`*
+## **Standard** - *`(Small-Brain method)`*
 
 1. Press <kbd>`Win`</kbd> + <kbd>`R`</kbd>, enter `shell:startup`, then click <kbd>OK</kbd>
 2. Create a shortcut to the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) in your startup folder.
 
-## Smart - *`(Big-Brain Method)`*
+## **Smart** - *`(Big-Brain Method)`*
 
 Since the function of this script is to add scripts to the startup folder, you can just use this script to add itself to the startup folder.
 
@@ -159,9 +159,9 @@ Then select the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/mai
 
 You can confirm the script has been added to the startup folder by pressing the **Hotkey** to display the **Startup Folder** shortcuts.
 
-## Permanent *(Chad)* Method - *`(Task Scheduler Method)`*
+## **Permanent** *(Chad)* **Method** - *`(Task Scheduler Method)`*
 
-**`Run the following commands in an Administrator powershell prompt.`**
+**Run the following commands in an Administrator powershell prompt.**
 
 *Be sure to specify the correct path to your CAPshift.ahk file.*
 ```
