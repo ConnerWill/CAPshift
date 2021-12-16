@@ -175,7 +175,7 @@ Then select the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/mai
 
 You can confirm the script has been added to the startup folder by pressing the **Hotkey** to display the **Startup Folder** shortcuts.
 
-## Permanent Method - *`(Task Scheduler (Chad) Method)`*
+## **Permanent Method** - *`(Task Scheduler (Chad) Method)`*
 **Run the following commands in an Administrator powershell prompt.**
 
 *Be sure to specify the correct path to your CAPshift.ahk file.*
