@@ -1,14 +1,10 @@
 ; CAPshift.ahk
 ;
-;   Slows down and extends the CapsLock key.
-;   Also slows down F1, Insert, NumLock and ScrollLock
-;
-;     Hold for 0.5 sec to toggle caps lock on or off.
-;     Hold for 1 sec to show a menu that converts selected text to
-;       UPPER CASE, lower case, Title Case or iNVERT cASE.
-;
-;     If the keyboard is idle for 120 seconds, CapsLock is turned off.
-;
+;   CAPshift.ahk extends the functionality of the the CapsLock key.
+;   It allows you to disable unused/annoying keys
+;   along with providing formatting of selected text and text replacement.
+;   See README.md for more information "https://github.com/ConnerWill/CAPshift#readme"
+
 
 #NoEnv
 #SingleInstance,Force
@@ -401,32 +397,6 @@ Gui,99:Add,Text,y+10,- Hold for 1 sec to show a menu that converts selected text
 Gui,99:Add,Text,y+5,UPPER CASE, lower case, Title Case, iNVERT cASE, RaNDoM CaSE
 Gui,99:Add,Text,y+5,or to Replace user defined chars as defined in CAPshift.ini.
 Gui,99:Add,Text,y+10,- If the keyboard is idle for 120 seconds, CapsLock is turned off.
-
-Gui,99:Add,Picture,xm y+20 Icon5,%applicationname%.exe
-Gui,99:Font,Bold
-Gui,99:Add,Text,x+10 yp+10,1 Hour Software by Skrommel
-Gui,99:Font
-Gui,99:Add,Text,y+10,For more tools, information and donations, please visit
-Gui,99:Font,CBlue Underline
-Gui,99:Add,Text,y+5 G1HOURSOFTWARE,www.1HourSoftware.com
-Gui,99:Font
-
-Gui,99:Add,Picture,xm y+20 Icon7,%applicationname%.exe
-Gui,99:Font,Bold
-Gui,99:Add,Text,x+10 yp+10,DonationCoder
-Gui,99:Font
-Gui,99:Add,Text,y+10,Please support the contributors at
-Gui,99:Font,CBlue Underline
-Gui,99:Add,Text,y+5 GDONATIONCODER,www.DonationCoder.com
-Gui,99:Font
-
-Gui,99:Add,Picture,xm y+20 Icon6,%applicationname%.exe
-Gui,99:Font,Bold
-Gui,99:Add,Text,x+10 yp+10,AutoHotkey
-Gui,99:Font
-Gui,99:Add,Text,y+10,This tool was made using the powerful
-Gui,99:Font,CBlue Underline
-Gui,99:Add,Text,y+5 GAUTOHOTKEY,www.AutoHotkey.com
 Gui,99:Font
 
 Gui,99:Show,,%applicationname% About
@@ -434,12 +404,8 @@ hCurs:=DllCall("LoadCursor","UInt",NULL,"Int",32649,"UInt") ;IDC_HAND
 OnMessage(0x200,"WM_MOUSEMOVE")
 Return
 
-1HOURSOFTWARE:
-  Run,http://www.1hoursoftware.com,,UseErrorLevel
-Return
-
-DONATIONCODER:
-  Run,http://www.donationcoder.com,,UseErrorLevel
+GitHub:
+  Run,https://github.com/ConnerWill/CAPshift,,UseErrorLevel
 Return
 
 AUTOHOTKEY:
@@ -474,7 +440,8 @@ Return
 
 
 READINI:
-IfNotExist,CAPshift.ini
+inifilename=CAPshift.ini
+IfNotExist,%inifilename%
 {
   inifile=;CAPshift.ini
   inifile=%inifile%`n`;[Settings]
