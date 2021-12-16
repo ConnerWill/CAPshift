@@ -73,13 +73,13 @@ Sometimes abbreviated as <kbd>`ScLk`</kbd>, <kbd>`ScrLk`</kbd>, or <kbd>`Slk`</k
 To change the settings/behavior of this script, modify the [`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) script and then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) *(program will restart if it's already running).*
 
 **Note:*
->`!` *corresponds to* <kbd>`Alt`</kbd>
+>>`!` *corresponds to* <kbd>`Alt`</kbd>
 >
->`+` *corresponds to*  <kbd>`Shift`</kbd>
+>>`+` *corresponds to*  <kbd>`Shift`</kbd>
 >
->`#` *corresponds to*  <kbd>`Win`</kbd>
+>>`#` *corresponds to*  <kbd>`Win`</kbd>
 >
->`^` *corresponds to*  <kbd>`Ctrl`</kbd>
+>>`^` *corresponds to*  <kbd>`Ctrl`</kbd>
 
 *A more detailed description of hotkeys can be found here: [AutoHotkey docs](https://autohotkey.com/docs/Hotkeys.htm).*<br>
 
@@ -125,19 +125,18 @@ AA=Å
 # ini Values Descriptions
 Variable|Value|Description
 --- | :--: | :-:
-```capslockidle```|Range: 0-999 0=Off|```Seconds``` to wait before **turning off** <kbd>`CapsLock`</kbd> when the keyboard is idle.
-```showstatus```|0=Hide 1=Show|```Hide``` *or* ```show``` the status windows.
-```delaycapslock```|0=Ignore 1=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`CapsLock`</kbd>.
-```delayf1```|0=Ignore  1=Delay |```Enable``` *Or* ```Disable``` the script from affecting <kbd>`F1`</kbd>.
-```delayinsert```|0=Ignore 1=Delay|```Enable``` *Or* ```Disable``` the script from ```affecting <kbd>`Insert`</kbd>.
-```delayscrolllock```|0=Ignore F1  1=Delay ScrollLock|```Enable``` *Or* **Disable** the script from affecting <kbd>`ScrollLock`</kbd>.
-```delaynumlock```|0=Ignore F1  1=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`NumLock`</kbd>.
+```capslockidle```|Range: `0-999` `0`=Off|```Seconds``` to wait before **turning off** <kbd>`CapsLock`</kbd> when the keyboard is idle.
+```showstatus```|`0`=Hide `1`=Show|```Hide``` *or* ```show``` the status windows.
+```delaycapslock```|`0`=Ignore `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`CapsLock`</kbd>.
+```delayf1```|`0`=Ignore  `1`=Delay |```Enable``` *Or* ```Disable``` the script from affecting <kbd>`F1`</kbd>.
+```delayinsert```|`0`=Ignore `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`Insert`</kbd>.
+```delayscrolllock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay ScrollLock|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`ScrollLock`</kbd>.
+```delaynumlock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`NumLock`</kbd>.
 
 Character Replacement
 
-```ae=æ```
+```ae=æ```,```oe=ø```,```aa=å```,```AE=Æ```,```OE=Ø```,```AA=Å```,```AA=Å```
 
-```oe=ø```,```aa=å```,```AE=Æ```,```OE=Ø```,```AA=Å```,```AA=Å```
 ``.return..newline..return..newline.=.space..tab..return..newline..comma..semicolon.``
 ```
 *e.g.*
