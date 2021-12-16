@@ -4,6 +4,21 @@
 [**CAPshift.ahk**](https://github.com/ConnerWill/CAPshift) extends the functionality of the the **CapsLock** key.
 It allows you to disable unused/annoying keys along with providing formatting of  selected text and text replacement.
 
+* [CAPshift](#capshift)
+* [Hotkeys](#hotkeys)
+* [Overview](#overview)
+   * [Caps Lock](#caps-lock)
+   * [NumLock](#numlock)
+   * [Scroll Lock](#scroll-lock)
+* [Usage](#usage)
+* [Customizing Hotkeys](#customizing-hotkeys)
+* [ini Values Descriptions](#ini-values-descriptions)
+* [Running on boot](#running-on-boot)
+   * [<strong>Standard</strong> - <em>(Small-Brain method)</em>](#standard---small-brain-method)
+   * [<strong>Smart</strong> - <em>(Big-Brain Method)</em>](#smart---big-brain-method)
+   * [<strong>Permanent</strong> <em>(Chad)</em> <strong>Method</strong> - <em>(Task Scheduler Method)</em>](#permanent-chad-method---task-scheduler-method)
+   * [Other](#other)
+
 *Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)*
 
 # Hotkeys
