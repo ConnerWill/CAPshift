@@ -137,18 +137,7 @@ Character Replacement
 
 ```ae=æ```
 
-```oe=ø```
-
-```aa=å```
-
-```AE=Æ```
-
-```OE=Ø```
-
-```AA=Å```
-
-```AA=Å```
-
+```oe=ø```,```aa=å```,```AE=Æ```,```OE=Ø```,```AA=Å```,```AA=Å```
 ``.return..newline..return..newline.=.space..tab..return..newline..comma..semicolon.``
 ```
 *e.g.*
