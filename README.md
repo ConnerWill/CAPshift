@@ -165,15 +165,17 @@ You can confirm the script has been added to the startup folder by pressing the 
 
 *Be sure to specify the correct path to your CAPshift.ahk file.*
 ```
+$C = "PATH\TO\CAPshift.ahk"
+
 $A = New-ScheduledTaskAction -Execute "PATH\TO\CAPshift.ahk"
 
-$T = New-ScheduledTaskTrigger -AtLogon
+$P = New-ScheduledTaskTrigger -AtLogon
 
-$P = New-ScheduledTaskPrincipal -GroupId "BUILTIN\Administrators" -RunLevel Highest
+$S = New-ScheduledTaskPrincipal -GroupId "BUILTIN\Administrators" -RunLevel Highest
 
-$S = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit 0
+$F = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit 0
 
-$D = New-ScheduledTask -Action $A -Principal $P -Trigger $T -Settings $S
+$T = New-ScheduledTask -Action $A -Principal $P -Trigger $T -Settings $S
 Register-ScheduledTask CAPshift -InputObject $D
 ```
 
