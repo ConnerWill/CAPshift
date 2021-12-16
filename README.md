@@ -14,7 +14,7 @@ Action | Keys | Press Key Time (Seconds)
 **Holding** <kbd>`CapsLock`</kbd>** for `1` second *(or user defined time)*  displays a popup tooltip menu.|<kbd>`CapsLock`</kbd>|`1`
 **Holding** <kbd>`F1`</kbd> for `0.5` seconds *(or user defined time)* presses <kbd>`F1`</kbd> once.|<kbd>`F1`</kbd>|`0.5`
 **Holding** <kbd>`NumLock`</kbd> for `0.5` seconds *(or user defined time)*, Toggles number pad locking. *(Default **Number Lock** state is **Enabled**)*|<kbd>`NumLock`</kbd> |`0.5`
-**Holding** <kbd>`ScrollLock`</kbd> for 0.5 seconds *(or user defined time)* toggles CapsLock **ON** or **OFF**|<kbd>`ScrollLock`</kbd>|`0.5`
+**Holding** <kbd>`ScrollLock`</kbd> for `0.5` seconds *(or user defined time)* toggles CapsLock **ON** or **OFF**|<kbd>`ScrollLock`</kbd>|`0.5`
 
 *You can also customize the hotkeys and actions as described in the **"Customizing Hotkeys"** section below.*
 
