@@ -16,7 +16,7 @@ It allows you to disable unused/annoying keys along with providing formatting of
 * [Running on boot](#running-on-boot)
    * [Standard - <em>(Small-Brain method)</em>](#standard---small-brain-method)
    * [Smart - <em>(Big-Brain Method)</em>](#smart---big-brain-method)
-   * [Permanent Method - <em>(Task Scheduler **(Chad)** Method)</em>](#permanent-method---task-scheduler-chad-method)
+   * [Permanent Method - <em>(Task Scheduler (Chad) Method)</em>](#permanent-method---task-scheduler-chad-method)
 * [Other](#other)
 
 
@@ -175,7 +175,7 @@ Then select the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/mai
 
 You can confirm the script has been added to the startup folder by pressing the **Hotkey** to display the **Startup Folder** shortcuts.
 
-## Permanent Method - *`(Task Scheduler **(Chad)** Method)`*
+## Permanent Method - *`(Task Scheduler (Chad) Method)`*
 **Run the following commands in an Administrator powershell prompt.**
 
 *Be sure to specify the correct path to your CAPshift.ahk file.*
