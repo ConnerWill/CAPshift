@@ -16,7 +16,7 @@ It allows you to disable unused/annoying keys along with providing formatting of
 * [Running on boot](#running-on-boot)
    * [Standard - <em>(Small-Brain method)</em>](#standard---small-brain-method)
    * [Smart - <em>(Big-Brain Method)</em>](#smart---big-brain-method)
-	 * [Permanent Method - <em>(Task Scheduler **(Chad)** Method)</em>](#permanent-method---task-scheduler-chad-method)
+   * [Permanent Method - <em>(Task Scheduler **(Chad)** Method)</em>](#permanent-method---task-scheduler-chad-method)
 * [Other](#other)
 
 
