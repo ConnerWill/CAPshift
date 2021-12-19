@@ -173,9 +173,8 @@ You can confirm the script has been added to the startup folder by pressing the 
 **Run the following commands in an Administrator powershell prompt.**
 
 *Be sure to specify the correct path to your CAPshift.ahk file.*
-```
-$A = "PATH\TO\CAPshift.ahk"
 
+```
 $T = New-ScheduledTaskAction -Execute "PATH\TO\CAPshift.ahk"
 
 $P = New-ScheduledTaskTrigger -AtLogon
