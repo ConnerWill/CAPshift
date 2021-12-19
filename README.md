@@ -5,8 +5,9 @@
 It allows you to disable unused/annoying keys along with providing formatting of  selected text and text replacement.
 
 * [CAPshift](#capshift)
-* [Hotkeys](#hotkeys)
 * [Overview](#overview)
+* [Hotkeys](#hotkeys)
+* [Key States](#key-states)
    * [Caps Lock](#caps-lock)
    * [NumLock](#numlock)
    * [Scroll Lock](#scroll-lock)
@@ -24,6 +25,9 @@ It allows you to disable unused/annoying keys along with providing formatting of
 
 *Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)*
 
+# Overview
+This script allows you to set the desired key state of keys on your keyboard; while still allowing you to use those keys without changing settings or killing the script. It also adds a popup menu that can format the currently selected text.
+
 # Hotkeys
 
 Action | Keys | Press Key Time (Seconds)
@@ -36,8 +40,7 @@ Action | Keys | Press Key Time (Seconds)
 
 *You can also customize the hotkeys and actions as described in the **"Customizing Hotkeys"** section below.*
 
-# Overview
-This script allows you to set the desired key state of keys on your keyboard; while still allowing you to use those keys without changing settings or killing the script. It also adds a popup menu that can format the currently selected text.
+# Key States
 
 ## Caps Lock
 Sometimes abbreviated as <kbd>`CAPS`</kbd> or <kbd>`CAPSLK`</kbd>, Caps Lock is a toggle key on a computer keyboard, that when pressed, causes all letters typed to be in uppercase. It allows you to switch the letters on your keyboard from lowercase to uppercase. If you press the Caps Lock key to enable Caps Lock, every letter you type on the keyboard will be automatically capitalized until you press it again to disable it. For example, when Caps Lock is enabled, the typed letters appear "**LIKE THIS**". When disabled, they appear "**like this**".
