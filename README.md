@@ -22,9 +22,6 @@ It allows you to disable unused/annoying keys along with providing formatting of
    * [Permanent Method - <em>(Task Scheduler (Chad) Method)</em>](#permanent-method---task-scheduler-chad-method)
 * [Other](#other)
 
-
-*Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)*
-
 # Overview
 This script allows you to set the desired key state of keys on your keyboard; while still allowing you to use those keys without changing settings or killing the script. It also adds a popup menu that can format the currently selected text.
 
@@ -199,3 +196,4 @@ The task is now registered and will run on the next logon, and can be viewed or 
 ## Other
 *To see debug messages, download [SysInternals DebugView](https://technet.microsoft.com/en-us/sysinternals/debugview).*
 
+*Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)*
