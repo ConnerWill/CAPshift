@@ -11,8 +11,10 @@ It allows you to disable unused/annoying keys along with providing formatting of
    * [NumLock](#numlock)
    * [Scroll Lock](#scroll-lock)
 * [Usage](#usage)
-* [Customizing Hotkeys](#customizing-hotkeys)
-* [ini Values Descriptions](#ini-values-descriptions)
+* [Configuration File](#configuration-file)
+   * [ini Values Descriptions](#ini-values-descriptions)
+   * [Configuration File Contents](#configuration-file-contents)
+   * [Customizing Hotkeys](#customizing-hotkeys)
 * [Running on boot](#running-on-boot)
    * [Standard - <em>(Small-Brain method)</em>](#standard---small-brain-method)
    * [Smart - <em>(Big-Brain Method)</em>](#smart---big-brain-method)
@@ -69,7 +71,9 @@ Sometimes abbreviated as <kbd>`ScLk`</kbd>, <kbd>`ScrLk`</kbd>, or <kbd>`Slk`</k
 # Usage
 [Install AutoHotkey](https://autohotkey.com/download/), then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) script (open with AutoHotkey if prompted).
 
-# Customizing Hotkeys
+# Configuration File
+
+## Customizing Hotkeys
 To change the settings/behavior of this script, modify the [`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) script and then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) *(program will restart if it's already running).*
 
 **Note:*
@@ -85,7 +89,9 @@ To change the settings/behavior of this script, modify the [`CAPshift.ini`](http
 
 *After any changes to the [`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) configuration file, the program needs to be closed and opened again.*
 
-[`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini)
+## Configuration File Contents
+
+[`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) contents
 ```
 ;\[Settings]
 ;capslockidle=120    ;0-999  0=Off  Seconds to wait before turning off CapsLock when the keyboard is idle
@@ -122,7 +128,7 @@ OE=Ø
 AA=Å
 ```
 
-# ini Values Descriptions
+## ini Values Descriptions
 Variable|Value|Description
 --- | :--: | :-:
 ```capslockidle```|Range: `0-999` `0`=Off|```Seconds``` to wait before **turning off** <kbd>`CapsLock`</kbd> when the keyboard is idle.
