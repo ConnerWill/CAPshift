@@ -13,9 +13,9 @@ It allows you to disable unused/annoying keys along with providing formatting of
    * [Scroll Lock](#scroll-lock)
 * [Usage](#usage)
 * [Configuration File](#configuration-file)
-   * [ini Values Descriptions](#ini-values-descriptions)
-   * [Configuration File Contents](#configuration-file-contents)
    * [Customizing Hotkeys](#customizing-hotkeys)
+   * [Configuration File Values Descriptions](#configuration-file-value-descriptions)
+   * [Configuration File Contents](#configuration-file-contents)
 * [Running on boot](#running-on-boot)
    * [Standard - <em>(Small-Brain method)</em>](#standard---small-brain-method)
    * [Smart - <em>(Big-Brain Method)</em>](#smart---big-brain-method)
@@ -89,6 +89,29 @@ To change the settings/behavior of this script, modify the [`CAPshift.ini`](http
 
 *After any changes to the [`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) configuration file, the program needs to be closed and opened again.*
 
+
+## Configuration File Value Descriptions
+Variable|Value|Description
+--- | :--: | :-:
+```capslockidle```|Range: `0-999` `0`=Off|```Seconds``` to wait before **turning off** <kbd>`CapsLock`</kbd> when the keyboard is idle.
+```showstatus```|`0`=Hide `1`=Show|```Hide``` *or* ```show``` the status windows.
+```delaycapslock```|`0`=Ignore `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`CapsLock`</kbd>.
+```delayf1```|`0`=Ignore  `1`=Delay |```Enable``` *Or* ```Disable``` the script from affecting <kbd>`F1`</kbd>.
+```delayinsert```|`0`=Ignore `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`Insert`</kbd>.
+```delayscrolllock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay ScrollLock|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`ScrollLock`</kbd>.
+```delaynumlock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`NumLock`</kbd>.
+
+Character Replacement
+
+```ae=æ```,```oe=ø```,```aa=å```,```AE=Æ```,```OE=Ø```,```AA=Å```,```AA=Å```
+
+``.return..newline..return..newline.=.space..tab..return..newline..comma..semicolon.``
+```
+*e.g.*
+```ggg=GeeGeeGee```
+: *'ggg'* will be replaced with *'GeeGeeGee'*
+```
+
 ## Configuration File Contents
 
 [`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) contents
@@ -126,28 +149,6 @@ aa=å
 AE=Æ
 OE=Ø
 AA=Å
-```
-
-## ini Values Descriptions
-Variable|Value|Description
---- | :--: | :-:
-```capslockidle```|Range: `0-999` `0`=Off|```Seconds``` to wait before **turning off** <kbd>`CapsLock`</kbd> when the keyboard is idle.
-```showstatus```|`0`=Hide `1`=Show|```Hide``` *or* ```show``` the status windows.
-```delaycapslock```|`0`=Ignore `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`CapsLock`</kbd>.
-```delayf1```|`0`=Ignore  `1`=Delay |```Enable``` *Or* ```Disable``` the script from affecting <kbd>`F1`</kbd>.
-```delayinsert```|`0`=Ignore `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`Insert`</kbd>.
-```delayscrolllock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay ScrollLock|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`ScrollLock`</kbd>.
-```delaynumlock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`NumLock`</kbd>.
-
-Character Replacement
-
-```ae=æ```,```oe=ø```,```aa=å```,```AE=Æ```,```OE=Ø```,```AA=Å```,```AA=Å```
-
-``.return..newline..return..newline.=.space..tab..return..newline..comma..semicolon.``
-```
-*e.g.*
-```ggg=GeeGeeGee```
-: *'ggg'* will be replaced with *'GeeGeeGee'*
 ```
 
 # Running on boot
