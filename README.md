@@ -100,6 +100,8 @@ Sometimes abbreviated as <kbd>`ScLk`</kbd>, <kbd>`ScrLk`</kbd>, or <kbd>`Slk`</k
 ## Customizing Hotkeys
 To change the settings/behavior of this script, modify the [`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) script and then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) *(program will restart if it's already running).*
 
+If the configuration file does not exist, isn't referenced, or is not in the same folder as [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk), the configuration file will be automatically generated.
+
 **Note:*
 >>`!` *corresponds to* <kbd>`Alt`</kbd>
 >
