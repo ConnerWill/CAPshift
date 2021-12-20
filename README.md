@@ -16,6 +16,9 @@
    * [Caps Lock](#caps-lock)
    * [NumLock](#numlock)
    * [Scroll Lock](#scroll-lock)
+* [Text Formatting](#text-formatting)
+   * [Character Capitalization](#character-capitalization)
+   * [Character Replacement](#character-replacement)
 * [Usage](#usage)
 * [Configuration File](#configuration-file)
    * [Customizing Hotkeys](#customizing-hotkeys)
@@ -25,7 +28,7 @@
    * [Standard - <em>(Small-Brain method)</em>](#standard---small-brain-method)
    * [Smart - <em>(Big-Brain Method)</em>](#smart---big-brain-method)
    * [Permanent Method - <em>(Task Scheduler (Chad) Method)</em>](#permanent-method---task-scheduler-chad-method)
-* [Other](#other)
+* [Resources](#resources)
 
 # Overview
 This script allows you to set the desired key state of keys on your keyboard; while still allowing you to use those keys without changing settings or killing the script. It also adds a popup menu that can format the currently selected text.
@@ -73,8 +76,26 @@ Key|Num lock enabled|Num lock disabled
 ## Scroll Lock
 Sometimes abbreviated as <kbd>`ScLk`</kbd>, <kbd>`ScrLk`</kbd>, or <kbd>`Slk`</kbd>, the *'Scroll Lock'* key is found on a computer keyboard, often located close to the pause key. The Scroll Lock key was initially intended to be used in conjunction with the arrow keys to scroll through the contents of a text box. It has also been used to stop the scrolling of text or halt the operation of a program. Today, the key is not often used.
 
+
+# Text Formatting
+
+## Character Capitalization
+
+## Character Replacement
+
+```ae=æ```,```oe=ø```,```aa=å```,```AE=Æ```,```OE=Ø```,```AA=Å```,```AA=Å```
+
+``.return..newline..return..newline.=.space..tab..return..newline..comma..semicolon.``
+```
+*e.g.*
+```ggg=GeeGeeGee```
+: *'ggg'* will be replaced with *'GeeGeeGee'*
+```
+
+
 # Usage
 [Install AutoHotkey](https://autohotkey.com/download/), then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) script (open with AutoHotkey if prompted).
+
 
 # Configuration File
 
@@ -105,17 +126,6 @@ Variable|Value|Description
 ```delayinsert```|`0`=Ignore `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`Insert`</kbd>.
 ```delayscrolllock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay ScrollLock|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`ScrollLock`</kbd>.
 ```delaynumlock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`NumLock`</kbd>.
-
-Character Replacement
-
-```ae=æ```,```oe=ø```,```aa=å```,```AE=Æ```,```OE=Ø```,```AA=Å```,```AA=Å```
-
-``.return..newline..return..newline.=.space..tab..return..newline..comma..semicolon.``
-```
-*e.g.*
-```ggg=GeeGeeGee```
-: *'ggg'* will be replaced with *'GeeGeeGee'*
-```
 
 ## Configuration File Contents
 
@@ -198,7 +208,7 @@ The task is now registered and will run on the next logon, and can be viewed or 
 
 ---
 
-## Other
+# Resources
 *To see debug messages, download [SysInternals DebugView](https://technet.microsoft.com/en-us/sysinternals/debugview).*
 
 *Credit to [original script](https://www.autohotkey.com/boards/viewtopic.php?t=69889)*
