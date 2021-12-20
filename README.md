@@ -3,6 +3,9 @@
 # CAPshift 
 ![GitHub last commit](https://img.shields.io/github/last-commit/ConnerWill/CAPshift)
 ![GitHub](https://img.shields.io/github/license/ConnerWill/CAPshift)
+![GitHub repo size](https://img.shields.io/github/repo-size/ConnerWill/CAPshift)
+![GitHub issues](https://img.shields.io/github/issues-raw/ConnerWill/CAPshift)
+![GitHub Repo stars](https://img.shields.io/github/stars/ConnerWill/CAPshift?style=social)
 
 [**CAPshift.ahk**](https://github.com/ConnerWill/CAPshift) extends the functionality of the the **CapsLock** key.
 
