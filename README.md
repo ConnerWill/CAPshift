@@ -11,6 +11,7 @@
 
 * [CAPshift](#capshift)
 * [Overview](#overview)
+* [Usage](#usage)
 * [Hotkeys](#hotkeys)
 * [Key States](#key-states)
    * [Caps Lock](#caps-lock)
@@ -19,7 +20,6 @@
 * [Text Formatting](#text-formatting)
    * [Character Capitalization](#character-capitalization)
    * [Character Replacement](#character-replacement)
-* [Usage](#usage)
 * [Configuration File](#configuration-file)
    * [Customizing Hotkeys](#customizing-hotkeys)
    * [Configuration File Values Descriptions](#configuration-file-value-descriptions)
@@ -32,6 +32,9 @@
 
 # Overview
 This script allows you to set the desired key state of keys on your keyboard; while still allowing you to use those keys without changing settings or killing the script. It also adds a popup menu that can format the currently selected text.
+
+# Usage
+[Install AutoHotkey](https://autohotkey.com/download/), then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) script (open with AutoHotkey if prompted).
 
 # Hotkeys
 
@@ -91,11 +94,6 @@ Sometimes abbreviated as <kbd>`ScLk`</kbd>, <kbd>`ScrLk`</kbd>, or <kbd>`Slk`</k
 ```ggg=GeeGeeGee```
 : *'ggg'* will be replaced with *'GeeGeeGee'*
 ```
-
-
-# Usage
-[Install AutoHotkey](https://autohotkey.com/download/), then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) script (open with AutoHotkey if prompted).
-
 
 # Configuration File
 
