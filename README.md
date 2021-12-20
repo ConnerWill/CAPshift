@@ -1,14 +1,16 @@
 ![CAPshift Banner](media/CAPshift-Banner.png)
 
-# CAPshift 
+# **CAPshift**
+**[*CAPshift.ahk*](https://github.com/ConnerWill/CAPshift) extends the functionality of the the *CapsLock* key by allowing unused/annoying keys to be disabled, along with providing formatting of text and text replacement abilities.**
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/ConnerWill/CAPshift)
 ![GitHub issues](https://img.shields.io/github/issues-raw/ConnerWill/CAPshift)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ConnerWill/CAPshift)
 ![GitHub](https://img.shields.io/github/license/ConnerWill/CAPshift)
 ![GitHub Repo stars](https://img.shields.io/github/stars/ConnerWill/CAPshift?style=social)
 
-[**CAPshift.ahk**](https://github.com/ConnerWill/CAPshift) extends the functionality of the the **CapsLock** key by allowing unused/annoying keys to be disabled, along with providing formatting of text and text replacement abilities.
 
+## Table Of Contents
 * [CAPshift](#capshift)
 * [Overview](#overview)
 * [Usage](#usage)
@@ -170,22 +172,22 @@ AA=Å
 
 You can make the script run on every boot with either of these methods.
 
-## **Standard** - *`(Small-Brain method)`*
+## **Standard** - *(Small-Brain method)*
 
 1. Press <kbd>`Win`</kbd> + <kbd>`R`</kbd>, enter `shell:startup`, then click <kbd>OK</kbd>
 2. Create a shortcut to the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) in your startup folder.
 
-## **Smart** - *`(Big-Brain Method)`*
+## **Smart** - *(Big-Brain Method)*
 
-Since the function of this script is to add scripts to the startup folder, you can just use this script to add itself to the startup folder.
+1. Since the function of this script is to add scripts to the startup folder, you can just use this script to add itself to the startup folder.
 
-You can do this by running the [`AutoStartupToggle.ahk`](https://github.com/ConnerWill) file (*Coming Soon ...*).
+2. You can do this by running the [`AutoStartupToggle.ahk`](https://github.com/ConnerWill) file (*Coming Soon ...*).
 
-Then select the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) file and press the **Hotkey** to add the selected file to the startup folder.
+3. Then select the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) file and press the **Hotkey** to add the selected file to the startup folder.
 
-You can confirm the script has been added to the startup folder by pressing the **Hotkey** to display the **Startup Folder** shortcuts.
+*You can confirm the script has been added to the startup folder by pressing the **Hotkey** to display the **Startup Folder** shortcuts.*
 
-## **Permanent Method** - *`(Task Scheduler (Chad) Method)`*
+## **Permanent Method** - *(Task Scheduler (Chad) Method)*
 **Run the following commands in an Administrator powershell prompt.**
 
 *Be sure to specify the correct path to your CAPshift.ahk file.*
