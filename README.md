@@ -80,7 +80,7 @@ When *'Num Lock'* is enabled, you can use the numbers on the keypad. When *'Num 
 
 Below is a chart with additional information about what each numeric keypad key does when *'Num Lock'* is enabled and disabled. For example, pressing the <kbd>`2`</kbd> key on the numeric keypad when *'Num Lock'* is enabled enters the number <kbd>`2`</kbd>, and when *'Num Lock'* is off, it will arrow down one line.
 
-Key|Num lock enabled|Num lock disabled
+Key pad key pressed|Num lock enabled|Num lock disabled
 --- | :-: | :-:
 <kbd>`0`</kbd>|0|Ins
 <kbd>`1`</kbd>|1|End
