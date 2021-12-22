@@ -26,17 +26,28 @@
    * [Customizing Hotkeys](#customizing-hotkeys)
    * [Configuration File Values Descriptions](#configuration-file-value-descriptions)
    * [Configuration File Contents](#configuration-file-contents)
-* [Running on boot](#running-on-boot)
-   * [Standard - <em>(Small-Brain method)</em>](#standard---small-brain-method)
-   * [Smart - <em>(Big-Brain Method)</em>](#smart---big-brain-method)
-   * [Permanent Method - <em>(Task Scheduler (Chad) Method)</em>](#permanent-method---task-scheduler-chad-method)
+* [Running CAPshift at Startup](#running-capshift-at-startup)
+   * [Standard Method](#standard-method)
+   * [Smart Method](#smart-method)
+   * [Permanent Method](#permanent-method)
 * [Resources](#resources)
 
 # Overview
 This script allows you to set the desired key state of keys on your keyboard; while still allowing you to use those keys without changing settings or killing the script. It also adds a popup menu that can format the currently selected text.
 
+
+# Installation
+
+1. Install [AutoHotkey](https://autohotkey.com/download/) if you havent already
+2. Clone this repository:
+```console
+$  git clone https://github.com/ConnerWill/CAPshift.git
+```
+3. Run [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk)
+
 # Usage
-[Install AutoHotkey](https://autohotkey.com/download/), then run the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) script (open with AutoHotkey if prompted).
+
+Run [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) script *(open with AutoHotkey if prompted)*.
 
 # Hotkeys
 
@@ -130,83 +141,76 @@ Variable|Value|Description
 ```delaynumlock```|`0`=Ignore <kbd>`F1`</kbd> `1`=Delay|```Enable``` *Or* ```Disable``` the script from affecting <kbd>`NumLock`</kbd>.
 
 ## Configuration File Contents
+**See [Configuration File Values Descriptions](#configuration-file-value-descriptions) for a description of each setting.)**
 
-[`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini) contents
-```
-;\[Settings]
-;capslockidle=120    ;0-999  0=Off  Seconds to wait before turning off CapsLock when the keyboard is idle
-;showstatus=1        ;0,1    0=Hide  1=Show  Hide or show the status windows
-;delaycapslock=1     ;0,1    0=Ignore CapsLock  1=Delay F1
-;delayf1=1           ;0,1    0=Ignore F1  1=Delay F1
-;delayinsert=1
-;delayscrolllock=1
-;delaynumlock=1
-;
-;ae=æ                ;Chars to replace=Chars to replace with
-;oe=ø                ;Special characters:
-;aa=å                ;  .space. .tab. .return. .newline. .comma. .semicolon.
-;AE=Æ
-;OE=Ø
-;AA=Å
-;AA=Å
-;.return..newline..return..newline.=
+Contents of [`CAPshift.ini`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ini)
 
+```ini
+; KEY SETTINGS
 \[Settings]
-capslockidle=120
-showstatus=1
-delaycapslock=1
-delayf1=1
+capslockidle=120    ;0-999  0=Off  Seconds to wait before turning off CapsLock when the keyboard is idle
+showstatus=1        ;0,1    0=Hide  1=Show  Hide or show the status windows
+delaycapslock=1     ;0,1    0=Ignore CapsLock  1=Delay F1
+delayf1=1           ;0,1    0=Ignore F1  1=Delay F1
 delayinsert=1
 delayscrolllock=1
 delaynumlock=1
 
+; REPLACEMENTS
 ae=æ
 oe=ø
 aa=å
 AE=Æ
 OE=Ø
 AA=Å
+AA=Å
+
+; (Special characters):
+;   .space.
+;   .tab.
+;   .comma.
+;   .semicolon.
+;   .return.
+;   .newline.
 ```
 
-# Running on boot
+# Running CAPshift at Startup
 
 You can make the script run on every boot with either of these methods.
 
-## **Standard** - *(Small-Brain method)*
+## **Standard Method**
+*(Small-Brain method)*
 
 1. Press <kbd>`Win`</kbd> + <kbd>`R`</kbd>, enter `shell:startup`, then click <kbd>OK</kbd>
 2. Create a shortcut to the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) in your startup folder.
 
-## **Smart** - *(Big-Brain Method)*
+## **Smart Method**
+*(Big-Brain Method)*
 
 1. Since the function of this script is to add scripts to the startup folder, you can just use this script to add itself to the startup folder.
 
-2. You can do this by running the [`AutoStartupToggle.ahk`](https://github.com/ConnerWill) file (*Coming Soon ...*).
+2. You can do this by running the [`AutoStartupToggle.ahk`](https://github.com/ConnerWill) file *(Coming Soon ...)*.
 
 3. Then select the [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) file and press the **Hotkey** to add the selected file to the startup folder.
 
 *You can confirm the script has been added to the startup folder by pressing the **Hotkey** to display the **Startup Folder** shortcuts.*
 
-## **Permanent Method** - *(Task Scheduler (Chad) Method)*
-**Run the following commands in an Administrator powershell prompt.**
+## **Permanent Method**
+*(Chad Method)*
 
+*Run the following commands in an Administrator powershell prompt.*
 *Be sure to specify the correct path to your CAPshift.ahk file.*
 
-```
+```powershell
 $T = New-ScheduledTaskAction -Execute "PATH\TO\CAPshift.ahk"
-
 $P = New-ScheduledTaskTrigger -AtLogon
-
 $S = New-ScheduledTaskPrincipal -GroupId "BUILTIN\Administrators" -RunLevel Highest
-
 $F = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit 0
-
 $D = New-ScheduledTask -Action $A -Principal $P -Trigger $T -Settings $S
-
 Register-ScheduledTask CAPshift -InputObject $D
 ```
 
-The task is now registered and will run on the next logon, and can be viewed or modified in *'Task Scheduler'*.
+The task is now registered and will run on the next logon. The task can be viewed or modified in *'Task Scheduler'*.
 
 ---
 
