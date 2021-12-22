@@ -29,7 +29,7 @@
 * [Running CAPshift at Startup](#running-capshift-at-startup)
    * [Standard Method](#standard-method)
    * [Smart Method](#smart-method)
-   * [Permanent Method](#permanent-method)
+   * [Task Scheduler Method](#task-scheduler-method)
 * [Resources](#resources)
 
 # Overview
@@ -200,7 +200,7 @@ You can make the script run on every boot with either of these methods.
 
 *You can confirm the script has been added to the startup folder by pressing the **Hotkey** to display the **Startup Folder** shortcuts.*
 
-## **Permanent Method**
+## **Task Scheduler Method**
 *(Chad Method)*
 
 *Run the following commands in an Administrator powershell prompt.*
