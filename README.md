@@ -49,22 +49,27 @@ $  git clone https://github.com/ConnerWill/CAPshift.git
 
 Run [`CAPshift.ahk`](https://github.com/ConnerWill/CAPshift/blob/main/CAPshift.ahk) script *(open with AutoHotkey if prompted)*.
 
-# Hotkeys
+*Holding* <kbd>`CapsLock`</kbd> for `0.5` seconds toggles CapsLock **ON** or **OFF**
 
-Action | Keys | Press Key Time (Seconds)
---- | :-: | :-:
-*Holding* <kbd>`CapsLock`</kbd> for `0.5` seconds *(or user defined time)* toggles CapsLock **ON** or **OFF**|<kbd>`CapsLock`</kbd>|`0.5`
 **Holding** <kbd>`CapsLock`</kbd>** for `1` second *(or user defined time)*  displays a popup tooltip menu.|<kbd>`CapsLock`</kbd>|`1`
+
 **Holding** <kbd>`F1`</kbd> for `0.5` seconds *(or user defined time)* presses <kbd>`F1`</kbd> once.|<kbd>`F1`</kbd>|`0.5`
+
 **Holding** <kbd>`NumLock`</kbd> for `0.5` seconds *(or user defined time)*, Toggles number pad locking. *(Default **Number Lock** state is **Enabled**)*|<kbd>`NumLock`</kbd> |`0.5`
+
 **Holding** <kbd>`ScrollLock`</kbd> for `0.5` seconds *(or user defined time)* toggles CapsLock **ON** or **OFF**|<kbd>`ScrollLock`</kbd>|`0.5`
+
 
 *You can also customize the hotkeys and actions as described in the **"Customizing Hotkeys"** section below.*
 
 # Key States
 
 ## Caps Lock
-Sometimes abbreviated as <kbd>`CAPS`</kbd> or <kbd>`CAPSLK`</kbd>, Caps Lock is a toggle key on a computer keyboard, that when pressed, causes all letters typed to be in uppercase. It allows you to switch the letters on your keyboard from lowercase to uppercase. If you press the Caps Lock key to enable Caps Lock, every letter you type on the keyboard will be automatically capitalized until you press it again to disable it. For example, when Caps Lock is enabled, the typed letters appear "**LIKE THIS**". When disabled, they appear "**like this**".
+Sometimes abbreviated as <kbd>`CAPS`</kbd> or <kbd>`CAPSLK`</kbd>. Caps Lock is a toggle key on a computer keyboard, when pressed it causes all letters typed to be in uppercase. Allowing you to switch the letters on your keyboard from lowercase to uppercase without holding <kbd>`Shift`</kbd>.
+
+If you press the Caps Lock key, every letter you type on the keyboard will be automatically capitalized until you press it again to disable it.
+
+For example, when Caps Lock is enabled, the typed letters appear "**LIKE THIS**". When disabled, they appear "**like this**".
 
 ## NumLock
 Short for numeric lock or number lock, the Num key, Num Lock, or Num Lk key is on the top-left corner of a keyboard's numeric keypad. The Num Lock key enables and disables the numeric pad.
@@ -79,13 +84,13 @@ Key|Num lock enabled|Num lock disabled
 --- | :-: | :-:
 <kbd>`0`</kbd>|0|Ins
 <kbd>`1`</kbd>|1|End
-<kbd>`2`</kbd>|2|Down arrow
+<kbd>`2`</kbd>|2|↓
 <kbd>`3`</kbd>|3|PgDn
-<kbd>`4`</kbd>|4|Left arrow
+<kbd>`4`</kbd>|4|←
 <kbd>`5`</kbd>|5|Nothing
-<kbd>`6`</kbd>|6|Right arrow
+<kbd>`6`</kbd>|6|→
 <kbd>`7`</kbd>|7|Home
-<kbd>`8`</kbd>|8|Up arrow
+<kbd>`8`</kbd>|8|↑
 <kbd>`9`</kbd>|9|PgUp
 <kbd>`.`</kbd>|.|Del
 
