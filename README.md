@@ -3,9 +3,11 @@
 # **CAPshift**
 > **[*CAPshift.ahk*](https://github.com/ConnerWill/CAPshift) extends the functionality of the the *CapsLock* key by allowing unused/annoying keys to be disabled, along with providing formatting of text and text replacement abilities.**
 
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/ConnerWill/CAPshift)
 ![GitHub issues](https://img.shields.io/github/issues-raw/ConnerWill/CAPshift)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ConnerWill/CAPshift)
+[![GitLab](https://img.shields.io/static/v1?label=gitlab&logo=gitlab&color=E24329&message=mirrored&style=flat-square)](https://gitlab.com/ConnerWill/arch-pi)
 ![GitHub](https://img.shields.io/github/license/ConnerWill/CAPshift)
 ![GitHub Repo stars](https://img.shields.io/github/stars/ConnerWill/CAPshift?style=social)
 
